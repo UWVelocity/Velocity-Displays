@@ -1,0 +1,30 @@
+---
+sites:
+  - &yahoo
+    site: http://yahoo.ca
+    time: 10
+    refresh: 600
+
+  - &nginx
+    site: http://nginx.org
+    time: 20
+    refresh: 60
+
+  - &yaml
+    site: http://yaml.org
+    time: 30
+    refresh: 120
+
+  - &velocity
+    site: http://velocity.uwaterloo.ca
+    time: 15
+    refresh: 50
+
+schedule:
+  - *yahoo
+  - *velocity
+  - *nginx
+  - *yaml
+  - *velocity
+  - *nginx
+  - *velocity
