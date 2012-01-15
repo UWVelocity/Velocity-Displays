@@ -1,24 +1,24 @@
 (function(){
-    var page = function(page){
-        page.load = function(loadCallback, finishCallback){
+    var page = function(page, index){
+        page.load = function(finishCallback){
             var iframe = page.iframe = $('<iframe></iframe>');
             iframe.attr('src', page.site);
+            iframe.attr('id', "contentpage" + index);
             iframe.addClass('loading').addClass('content');
             iframe.load(function(){
+                $('body iframe').not(iframe).remove();
                 iframe.removeClass('loading');
-                loadCallback();
                 setTimeout(finishCallback, page.time * 1000);
             });
             iframe.appendTo($('body'));
-        };
-        page.detach = function(){
-            page.iframe.remove();
         };
         return page;
     };
     var get_pages = function(i, callback){
         $.getJSON('/pagelist/' + i + '/', function(p_list){
-            callback(_.map(p_list, page));
+            callback(_.map(p_list, function(p){
+                return page(p, i++);
+            }));
         });
     };
     var page_stack = [];
@@ -52,15 +52,9 @@
             });
         }
     };
-    var current_page;
     var enqueue_page = function(){
         next_page(function(page){
-            page.load(function(){
-                if(current_page){
-                    current_page.detach();
-                }
-                current_page = page;
-            }, enqueue_page);
+            page.load(enqueue_page);
         });
     };
     enqueue_page();
