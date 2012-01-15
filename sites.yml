@@ -1,30 +1,24 @@
 ---
 sites:
-  - &yahoo
-    site: http://yahoo.ca
-    time: 10
-    refresh: 600
-
-  - &nginx
-    site: http://nginx.org
-    time: 20
-    refresh: 60
-
-  - &yaml
-    site: http://yaml.org
-    time: 30
-    refresh: 120
-
   - &velocity
     site: http://velocity.uwaterloo.ca
-    time: 15
-    refresh: 50
+    time: 30
+    refresh: 90
+
+  - &blog
+    site: http://velocity.uwaterloo.ca/blog
+    time: 60
+    refresh: 300
+
+  - &lndrme
+    site: http://lndr.me
+    time: 10
+    refresh: 60
 
 schedule:
-  - *yahoo
+  - *lndrme
   - *velocity
-  - *nginx
-  - *yaml
-  - *velocity
-  - *nginx
+  - *lndrme
+  - *blog
+  - *lndrme
   - *velocity
