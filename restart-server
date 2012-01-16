@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 git pull --ff-only
 touch tmp/restart.txt
