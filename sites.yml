@@ -20,10 +20,17 @@ sites:
     time: 45
     refresh: 300
 
+  - &thegame
+    site: http://cake.velocitythegame.com
+    time: 30
+    refresh: 180
+
 schedule:
+  - *thegame
   - *lndrme
   - *velocity
   - *lndrme
+  - *thegame
   - *blog
   - *lndrme
   - *velocity
