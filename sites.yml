@@ -15,6 +15,11 @@ sites:
     time: 10
     refresh: 60
 
+  - &addyourstuff
+    site: /addyourstuff
+    time: 45
+    refresh: 300
+
 schedule:
   - *lndrme
   - *velocity
@@ -22,3 +27,4 @@ schedule:
   - *blog
   - *lndrme
   - *velocity
+  - *addyourstuff

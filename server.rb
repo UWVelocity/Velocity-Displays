@@ -40,6 +40,10 @@ get '/' do
   send_file 'display_driver.html'
 end
 
+get %r(/addyourstuff/?) do
+  send_file 'add_your_stuff.html'
+end
+
 PREFETCH_SIZE = 10
 
 get %r{/pagelist/(\d+)/} do |index|
