@@ -4,6 +4,7 @@
             var iframe = page.iframe = $('<iframe></iframe>');
             iframe.attr('src', page.site);
             iframe.attr('id', "contentpage" + index);
+            iframe.attr('scrolling', "no");
             iframe.addClass('loading').addClass('content');
             iframe.load(function(){
                 $('body iframe').not(iframe).remove();
