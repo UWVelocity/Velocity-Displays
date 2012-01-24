@@ -26,7 +26,7 @@ sites:
     refresh: 180
 
   - &orientation
-    site: http://orientation.uwaterloo.ca/
+    site: http://orientation.uwaterloo.ca/leaders.php
     time: 45
     refresh: 240
 
