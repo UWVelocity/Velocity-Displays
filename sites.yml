@@ -12,7 +12,7 @@ sites:
 
   - &lndrme
     site: http://lndr.me
-    time: 10
+    time: 15
     refresh: 60
 
   - &addyourstuff
