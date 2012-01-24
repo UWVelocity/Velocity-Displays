@@ -25,13 +25,20 @@ sites:
     time: 30
     refresh: 180
 
+  - &orientation
+    site: http://orientation.uwaterloo.ca/
+    time: 45
+    refresh: 240
+
 schedule:
   - *thegame
   - *lndrme
+  - *orientation
   - *velocity
   - *lndrme
   - *thegame
   - *blog
+  - *orientation
   - *lndrme
   - *velocity
   - *addyourstuff
