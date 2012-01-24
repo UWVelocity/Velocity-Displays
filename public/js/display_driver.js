@@ -11,9 +11,9 @@
                 $('body iframe').not(iframe).remove();
                 iframe.removeClass('loading');
                 setTimeout(finishCallback, page.time * 1000);
+                iframe.prop('contentWindow').postMessage({time: page.time}, "*");
             });
             iframe.appendTo($('body'));
-            window.velocity_displays['time']=page.time;
         };
         return page;
     };
