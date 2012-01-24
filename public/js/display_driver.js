@@ -1,4 +1,5 @@
 (function(){
+    window.velocity_displays = {};
     var page = function(page, index){
         page.load = function(finishCallback){
             var iframe = page.iframe = $('<iframe></iframe>');
@@ -12,6 +13,7 @@
                 setTimeout(finishCallback, page.time * 1000);
             });
             iframe.appendTo($('body'));
+            window.velocity_displays['time']=page.time;
         };
         return page;
     };
