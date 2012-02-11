@@ -30,12 +30,18 @@ sites:
     time: 30
     refresh: 120
 
+  - &calendar
+    site: https://www.google.com/calendar/b/0/embed?src=oind4tiuh8mitd3q30blhpdl9o%40group.calendar.google.com
+    time: 45
+    refresh: 240
+
 schedule:
   - *thegame
   - *tagroll_startup_life
   - *lndrme
   - *velocity
   - *lndrme
+  - *calendar
   - *thegame
   - *tagroll_startup_life
   - *blog
