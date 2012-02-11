@@ -25,12 +25,19 @@ sites:
     time: 30
     refresh: 180
 
+  - &tagroll_startup_life
+    site: http://tagroll.me/?startuplife
+    time: 30
+    refresh: 120
+
 schedule:
   - *thegame
+  - *tagroll_startup_life
   - *lndrme
   - *velocity
   - *lndrme
   - *thegame
+  - *tagroll_startup_life
   - *blog
   - *lndrme
   - *velocity
