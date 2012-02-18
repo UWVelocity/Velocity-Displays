@@ -35,15 +35,22 @@ sites:
     time: 45
     refresh: 240
 
+  - &unixepoch
+    site: http://coolepochcountdown.com/
+    time: 5
+    refresh: 60
+
 schedule:
   - *thegame
   - *tagroll_startup_life
   - *lndrme
+  - *unixepoch
   - *velocity
   - *lndrme
   - *calendar
   - *thegame
   - *tagroll_startup_life
+  - *unixepoch
   - *blog
   - *lndrme
   - *velocity
