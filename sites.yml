@@ -40,17 +40,25 @@ sites:
     time: 5
     refresh: 60
 
+  - &thisforthat
+    site: http://itsthisforthat.com/
+    time: 5
+    refresh: 60
+
 schedule:
   - *thegame
   - *tagroll_startup_life
+  - *thisforthat
   - *lndrme
   - *unixepoch
   - *velocity
   - *lndrme
+  - *thisforthat
   - *calendar
   - *thegame
   - *tagroll_startup_life
   - *unixepoch
+  - *thisforthat
   - *blog
   - *lndrme
   - *velocity
