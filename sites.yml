@@ -21,7 +21,7 @@ sites:
     refresh: 300
 
   - &thegame
-    site: http://cake.velocitythegame.com
+    site: http://cake.velocitythegame.com/?hide_nominate_links=T
     time: 30
     refresh: 180
 
