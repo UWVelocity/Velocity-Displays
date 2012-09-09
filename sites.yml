@@ -20,11 +20,6 @@ sites:
     time: 45
     refresh: 300
 
-  - &thegame
-    site: http://cake.velocitythegame.com/?hide_nominate_links=T
-    time: 30
-    refresh: 180
-
   - &tagroll_startup_life
     site: http://tagroll.me/?startuplife
     time: 30
@@ -51,7 +46,6 @@ sites:
     refresh: 360
 
 schedule:
-  - *thegame
   - *tagroll_startup_life
   - *thisforthat
   - *lndrme
@@ -61,7 +55,6 @@ schedule:
   - *thisforthat
   - *calendar
   - *puppies
-  - *thegame
   - *tagroll_startup_life
   - *unixepoch
   - *thisforthat
