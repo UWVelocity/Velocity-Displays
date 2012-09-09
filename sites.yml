@@ -40,11 +40,6 @@ sites:
     time: 5
     refresh: 60
 
-  - &puppies
-    site: http://static-cdn1.ustream.tv/swf/live/viewer:62.swf?vrsl=c%3A214&cid=317016&v3=1&bgcolor=000000&campaign=facebook&rmalang=en_US
-    time: 30
-    refresh: 360
-
 schedule:
   - *tagroll_startup_life
   - *thisforthat
@@ -54,7 +49,6 @@ schedule:
   - *lndrme
   - *thisforthat
   - *calendar
-  - *puppies
   - *tagroll_startup_life
   - *unixepoch
   - *thisforthat
