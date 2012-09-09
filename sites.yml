@@ -52,7 +52,6 @@ schedule:
   - *tagroll_startup_life
   - *unixepoch
   - *thisforthat
-  - *blog
   - *lndrme
   - *velocity
   - *addyourstuff
