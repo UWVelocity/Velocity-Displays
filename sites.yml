@@ -40,6 +40,11 @@ sites:
     time: 5
     refresh: 60
 
+  - &fbposters
+    site: http://greenlay.net/fbposters/
+    time: 5
+    refresh: 60
+
 schedule:
   - *tagroll_startup_life
   - *thisforthat
@@ -54,4 +59,5 @@ schedule:
   - *thisforthat
   - *lndrme
   - *velocity
+  - *fbposters
   - *addyourstuff
