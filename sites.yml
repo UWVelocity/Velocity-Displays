@@ -45,19 +45,29 @@ sites:
     time: 5
     refresh: 60
 
+  - &pitchnightsocial
+    site: http://velocity.uwaterloo.ca/wp-content/uploads/2012/11/F13-Pitch-Night-Social.jpg
+    time: 15
+    refresh: 120
+
+  - &demoday
+    site: http://velocity.uwaterloo.ca/wp-content/uploads/2012/11/Demo-Day-MC.jpg
+    time: 20
+    refresh: 120
+
 schedule:
+  - *pitchnightsocial
   - *tagroll_startup_life
   - *thisforthat
   - *lndrme
+  - *demoday
   - *unixepoch
   - *velocity
+  - *pitchnightsocial
   - *lndrme
-  - *thisforthat
   - *calendar
-  - *tagroll_startup_life
-  - *unixepoch
-  - *thisforthat
   - *lndrme
+  - *demoday
   - *velocity
   - *fbposters
   - *addyourstuff
