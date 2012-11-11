@@ -40,7 +40,7 @@ get '/' do
   send_file 'display_driver.html'
 end
 
-serve_files = %w[addyourstuff]
+serve_files = %w[addyourstuff demo_day pitch_night]
 
 get %r(/(#{serve_files.collect(&Regexp.method(:escape)).join('|')})/?) do |filename|
   send_file "#{filename}.html"

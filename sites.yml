@@ -46,12 +46,12 @@ sites:
     refresh: 60
 
   - &pitchnightsocial
-    site: http://velocity.uwaterloo.ca/wp-content/uploads/2012/11/F13-Pitch-Night-Social.jpg
+    site: /pitch_night
     time: 15
     refresh: 120
 
   - &demoday
-    site: http://velocity.uwaterloo.ca/wp-content/uploads/2012/11/Demo-Day-MC.jpg
+    site: /demo_day
     time: 20
     refresh: 120
 
