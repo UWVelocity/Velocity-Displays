@@ -40,8 +40,10 @@ get '/' do
   send_file 'display_driver.html'
 end
 
-get %r(/addyourstuff/?) do
-  send_file 'add_your_stuff.html'
+serve_files = %w[addyourstuff]
+
+get %r(/(#{serve_files.collect(&Regexp.method(:escape)).join('|')})/?) do |filename|
+  send_file "#{filename}.html"
 end
 
 PREFETCH_SIZE = 10
