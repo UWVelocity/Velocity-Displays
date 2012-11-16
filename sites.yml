@@ -45,29 +45,23 @@ sites:
     time: 5
     refresh: 60
 
-  - &pitchnightsocial
-    site: /pitch_night
-    time: 15
-    refresh: 120
-
   - &demoday
     site: /demo_day
     time: 20
     refresh: 120
 
 schedule:
-  - *pitchnightsocial
   - *tagroll_startup_life
+  - *demoday
   - *thisforthat
   - *lndrme
-  - *demoday
   - *unixepoch
   - *velocity
-  - *pitchnightsocial
+  - *demoday
   - *lndrme
   - *calendar
   - *lndrme
-  - *demoday
   - *velocity
+  - *demoday
   - *fbposters
   - *addyourstuff
