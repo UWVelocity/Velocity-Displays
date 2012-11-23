@@ -40,29 +40,21 @@ sites:
     time: 5
     refresh: 60
 
-  - &demoday
-    site: /demo_day
-    time: 20
-    refresh: 120
-
   - &mantaphrase
     site: http://www.mantaphrase.com
     time: 30
     refresh: 150
 
 schedule:
-  - *demoday
   - *thisforthat
   - *lndrme
   - *mantaphrase
   - *unixepoch
   - *velocity
-  - *demoday
   - *lndrme
   - *calendar
   - *mantaphrase
   - *lndrme
   - *velocity
-  - *demoday
   - *fbposters
   - *addyourstuff
