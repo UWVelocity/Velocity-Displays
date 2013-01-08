@@ -50,20 +50,28 @@ sites:
     time: 15
     refresh: 90
 
+  - &reme
+    site: https://play.google.com/store/apps/details?id=com.remeapp
+    time: 20
+    refresh: 120
+
 schedule:
   - *thisforthat
+  - *reme
   - *lndrme
   - *velocityprinter
   - *mantaphrase
   - *unixepoch
   - *velocity
   - *velocityprinter
+  - *reme
   - *lndrme
   - *calendar
   - *mantaphrase
   - *velocityprinter
   - *lndrme
   - *velocity
+  - *reme
   - *velocityprinter
   - *fbposters
   - *addyourstuff
