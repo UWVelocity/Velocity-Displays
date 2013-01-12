@@ -51,7 +51,7 @@ sites:
     refresh: 90
 
   - &reme
-    site: http://www.youtube.com/embed/rHgH8ZeMqes?autoplay=1
+    site: http://www.youtube.com/embed/rHgH8ZeMqes?autoplay=1&subtitles=1
     time: 52
     refresh: 120
 
