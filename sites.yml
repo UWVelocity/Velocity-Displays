@@ -52,7 +52,7 @@ sites:
 
   - &reme
     site: http://www.youtube.com/embed/rHgH8ZeMqes?autoplay=1&subtitles=1
-    time: 52
+    time: 60
     refresh: 120
 
 schedule:
