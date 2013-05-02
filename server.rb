@@ -2,6 +2,7 @@
 require 'sinatra'
 require 'json'
 require 'sinatra/json'
+require 'multi_json'
 require 'yaml'
 
 class Page
