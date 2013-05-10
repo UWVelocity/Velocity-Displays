@@ -38,7 +38,7 @@ end
 schedule = File.open(File.join(File.dirname(__FILE__), 'sites.yml'), 'r'){|f|YAML.load(f)}["schedule"]
 
 get '/' do
-  send_file 'display_driver.html'
+  erb :display_driver
 end
 
 serve_files = %w[addyourstuff]
