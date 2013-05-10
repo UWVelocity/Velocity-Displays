@@ -45,11 +45,6 @@ sites:
     time: 30
     refresh: 150
 
-  - &velocityprinter
-    site: http://www.indiegogo.com/VeloCity3D
-    time: 15
-    refresh: 90
-
   - &reme
     site: http://www.youtube.com/embed/rHgH8ZeMqes?autoplay=1&cc_load_policy=1
     time: 60
@@ -58,19 +53,15 @@ sites:
 schedule:
   - *thisforthat
   - *lndrme
-  - *velocityprinter
   - *mantaphrase
   - *unixepoch
   - *velocity
-  - *velocityprinter
   - *reme
   - *lndrme
   - *calendar
   - *mantaphrase
-  - *velocityprinter
   - *lndrme
   - *velocity
-  - *velocityprinter
   - *fbposters
   - *reme
   - *addyourstuff
