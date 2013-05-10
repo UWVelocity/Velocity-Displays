@@ -8,6 +8,12 @@ require 'yaml'
 schedule = File.open(File.join(File.dirname(__FILE__), 'sites.yml'), 'r'){|f|YAML.load(f)}["schedule"]
 
 get '/' do
+  list = params['list']
+  if list
+    @list_arg = list
+  else
+    @list_arg = 'residence'
+  end
   erb :display_driver
 end
 

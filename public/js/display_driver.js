@@ -17,8 +17,9 @@
         };
         return page;
     };
+
     var get_pages = function(i, callback){
-        $.getJSON('/pagelist/' + i + '/', function(p_list){
+        $.getJSON('/pagelist/' + i + '/' + list_arg, function(p_list){
             callback(_.map(p_list, function(p){
                 return page(p, i++);
             }));
