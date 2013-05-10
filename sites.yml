@@ -1,54 +1,74 @@
 ---
+
+lists:
+    - &residence_only
+        - residence
+    - &garage_only
+        - garage
+    - &both
+        - garage
+        - residence
+
 sites:
   - &velocity
     site: http://velocity.uwaterloo.ca
     time: 30
     refresh: 90
+    display: *both
 
   - &blog
     site: http://velocity.uwaterloo.ca/blog
     time: 60
     refresh: 300
+    display: *both
 
   - &lndrme
     site: http://lndr.me
     time: 15
     refresh: 60
+    display: *residence_only
 
   - &addyourstuff
     site: /addyourstuff
     time: 45
     refresh: 300
+    display: *residence_only
 
   - &calendar
     site: https://www.google.com/calendar/b/0/embed?height=600&wkst=1&bgcolor=%23c0c0c0&src=uwvelocityprogram%40gmail.com&color=%2329527A&ctz=America%2FToronto&src=dd8kum382gps7rafoa2s7g4um8@group.calendar.google.com
     time: 45
     refresh: 240
+    display: *both
 
   - &unixepoch
     site: http://coolepochcountdown.com/
     time: 5
     refresh: 60
+    display: *residence_only
 
   - &thisforthat
     site: http://itsthisforthat.com/
     time: 5
     refresh: 60
+    display: *both
 
   - &fbposters
     site: http://greenlay.net/fbposters/
     time: 5
     refresh: 60
+    display: *both
 
   - &mantaphrase
     site: http://www.mantaphrase.com
     time: 30
     refresh: 150
+    display: *both
 
   - &reme
     site: http://www.youtube.com/embed/rHgH8ZeMqes?autoplay=1&cc_load_policy=1
     time: 60
     refresh: 120
+    display: *both
 
 schedule:
   - *thisforthat

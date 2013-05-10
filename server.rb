@@ -27,8 +27,14 @@ PREFETCH_SIZE = 10
 
 get %r{/pagelist/(\d+)/} do |index|
   index = index.to_i
+  list = params['list']
+  if list
+    filtered_schedule = schedule.select{|p| p['display'].member?(list)}
+  else
+    filtered_schedule = schedule
+  end
   list = (index...(index+PREFETCH_SIZE)).collect do |i|
-    schedule[i%schedule.size]
+    filtered_schedule[i%filtered_schedule.size]
   end
   json(list)
 end
